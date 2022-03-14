@@ -622,6 +622,40 @@ body {
           flex: 0 1 210px;
 }
 
+.rental {
+  padding-top: calc(40px + 105 * ((100vw - 320px) / 1120));
+  padding-bottom: calc(40px + 105 * ((100vw - 320px) / 1120));
+}
+
+.rental__inner {
+  max-width: 675px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rental__title {
+  font-weight: 600;
+  font-size: calc(26px + 9 * ((100vw - 320px) / 1120));
+  line-height: 125.7142857143%;
+  margin-bottom: 20px;
+}
+
+.rental__text {
+  margin-bottom: 35px;
+}
+
+.rental__link {
+  margin-bottom: 20px;
+}
+
+.rental__link:last-child {
+  margin-bottom: 0;
+}
+
+.default-btn--white {
+  color: #82c141;
+}
+
 @media (max-width: 768px) {
   .container-fluid {
     padding: 0 15px;
