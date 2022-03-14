@@ -5,19 +5,87 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Fleetster</title>
 	<!-- <link rel="stylesheet" href="css/libs.min.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header"></header>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<div class="header-top__inner">
+						<nav class="header-top__menu menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">About</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Contact</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">FAQs</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="header-top__logo logo" href="#">
+							<img class="logo__item" src="images/logo.png" alt="images">
+						</a>
+						<nav class="header-top__menu menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Manage booking</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Sign in</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-top__btn default-btn default-btn--blue">
+							<a class="default-btn__link" href="#">Register</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-content">
+					<div class="header-content__title">Find your ideal car from 500+ cars</div>
+					<div class="header-content__tabs">
+						<div class="header-content__tabs-buttons">
+							<button class="header-content__tab-btn" data-filter=".category-a">Same as Drop-off</button>
+							<button class="header-content__tab-btn" data-filter=".category-b">Different
+								Drop-off</button>
+						</div>
+						<div class="header-content__tabs-box">
+							<div class="header-content__tab-box mix category-a">
+								<form class="header-content__form">
+									<input class="header-content__input header-content__input--location" type="text"
+										placeholder="Enter City, Airport, Station, Region, District…">
+									<input class="header-content__input header-content__input--date" type="date">
+									<input class="header-content__input header-content__input--date" type="date">
+									<button class="header-content__button default-btn default-btn--green"
+										type="submit">Search</button>
+								</form>
+							</div>
+							<div class="header-content__tab-box mix category-b">
+								<form class="header-content__form">
+									<input class="header-content__input header-content__input--location" type="text"
+										placeholder="Enter City, Airport, Station, Region, District…">
+									<input class="header-content__input header-content__input--date" type="date">
+									<input class="header-content__input header-content__input--date" type="date">
+									<button class="header-content__button default-btn default-btn--green"
+										type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 		<main class="main"></main>
 		<footer class="footer"></footer>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 	<!-- <script src="js/libs.min.js"></script> -->
 	<script src="js/main.min.js"></script>
 </body>

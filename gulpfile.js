@@ -107,8 +107,9 @@ function style() {
 
 function script() {
 	return src([
+		'node_modules/jquery/dist/jquery.js',
 		'node_modules/slick-carousel/slick/slick.js',
-		// 'node_modules/jquery/dist/jquery.js'
+		'node_modules/mixitup/dist/mixitup.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -120,7 +121,7 @@ function js() {
 	return src([
 		'app/js/libs.min.js',
 		'app/js/main.js'
-		])
+	])
 		.pipe(concat('main.min.js'))
 		// .pipe(fileinclude())
 		// .pipe(dest(path.src.js))
@@ -181,7 +182,7 @@ gulp.task('otf2ttf', function () {
 // 	}
 // }
 
-function cb() {}
+function cb() { }
 
 function make() {
 	return src([

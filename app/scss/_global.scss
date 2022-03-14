@@ -24,7 +24,14 @@ li {
 	padding: 0;
 	// display: inline-block;
 }
-body {	
+body {
+	font-family: "Mulish", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: calc(24 / 16 * 100%);
+	letter-spacing: 0.5px;
+	color: $textColor;
 }
 .wrapper {
 	display: flex;
@@ -51,6 +58,22 @@ body {
 	.container-fluid {
 		padding: 0 15px;
 	}
+}
+.default-btn {
+	padding: 15px 40px;
+	font-size: 12px;
+	line-height: calc(15 / 12 * 100%);
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+}
+.default-btn--blue {
+	background-color: $blueColor;
+}
+.default-btn--green {
+	background-color: $greenColor;
 }
 
 // .breadcrumbs {
