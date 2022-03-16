@@ -65,15 +65,28 @@ body {
 	line-height: calc(15 / 12 * 100%);
 	color: #fff;
 	font-weight: 700;
+	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	cursor: pointer;
 	border: none;
+	transition: all 0.5s ease 0s;
 }
 .default-btn--blue {
 	background-color: $blueColor;
+	&:hover {
+		background-color: lighten($blueColor, 15);
+	}
 }
 .default-btn--green {
 	background-color: $greenColor;
+	&:hover {
+		background-color: lighten($greenColor, 15);
+	}
+}
+.title {
+	font-weight: 600;
+	@include adaptiv-font(40, 28);
+	line-height: calc(50 / 40 * 100%);
 }
 
 // .breadcrumbs {
