@@ -344,6 +344,177 @@
 }
 
 //========================================================================================
+.slider {
+	position: relative;
+	@include adaptiv-value("padding-top", 240, 40, 1);
+	@include adaptiv-value("padding-bottom", 240, 40, 1);
+
+	// .slider__title
+
+	&__title {
+		margin-bottom: 55px;
+	}
+
+	// .slider__items
+
+	&__items {
+	}
+	.slick-slide {
+		margin: 0 8px;
+	}
+
+	// .slider__item
+
+	&__item {
+		padding: 15px 20px;
+		display: flex;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: -85px;
+		right: 0;
+		z-index: 10;
+		width: 87px;
+		height: 36px;
+		font-size: 0;
+		border: 0;
+		cursor: pointer;
+	}
+	.slick-prev {
+		right: 100px;
+		background-image: url("../images/prev-arrow.svg");
+	}
+	.slick-next {
+		background-image: url("../images/next-arrow.svg");
+	}
+}
+.item-slider {
+	// .item-slider__images
+
+	&__images {
+		max-width: 320px;
+		min-height: 200px;
+		max-height: 200px;
+		margin-bottom: 10px;
+	}
+
+	// .item-slider__img
+
+	&__img {
+		margin: 0 auto;
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	// .item-slider__pretext
+
+	&__pretext {
+		padding-left: 32px;
+		font-weight: 300;
+		font-size: 10px;
+		line-height: calc(13 / 10 * 100%);
+		text-transform: uppercase;
+		margin-bottom: 18px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 20px;
+			height: 12px;
+			background-image: url("../images/icons/price-arrow.png");
+		}
+	}
+
+	// .item-slider__title
+
+	&__title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: calc(28 / 22 * 100%);
+		margin-bottom: 6px;
+	}
+
+	// .item-slider__subtitle
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: calc(19 / 15 * 100%);
+		margin-bottom: 5px;
+	}
+
+	// .item-slider__text
+
+	&__text {
+		font-weight: 200;
+		font-size: 13px;
+		line-height: calc(16 / 13 * 100%);
+		margin-bottom: 20px;
+	}
+
+	// .item-slider__nav
+
+	&__nav {
+		margin: auto 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .item-slider__btn
+
+	&__btn {
+		padding: 12px 20px;
+	}
+
+	// .item-slider__num
+
+	&__num {
+		display: flex;
+		align-items: center;
+	}
+}
+.cars-info {
+	// .cars-info__doors
+
+	&__doors {
+		padding-left: 17px;
+		margin: 0 5px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 6px;
+			width: 12px;
+			height: 12px;
+			background-image: url("../images/icons/doors.svg");
+		}
+	}
+
+	// .cars-info__people
+
+	&__people {
+		padding-left: 25px;
+		margin: 0 5px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 6px;
+			width: 20px;
+			height: 12px;
+			background-image: url("../images/icons/people.svg");
+		}
+	}
+}
+//========================================================================================
 
 //========================================================================================
 @import "_media";
