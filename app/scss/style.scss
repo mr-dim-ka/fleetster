@@ -359,8 +359,26 @@
 
 	&__items {
 	}
+	.slick-track {
+		display: flex;
+		align-items: center;
+		column-gap: 50px;
+	}
+	.slick-list {
+		display: flex;
+		align-items: center;
+		height: 600px;
+	}
 	.slick-slide {
+		max-width: 80%;
 		margin: 0 8px;
+		border-top: 4px solid transparent;
+		transition: all 0.5s ease 0s;
+	}
+	.slick-current.slick-active {
+		box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid $orangeColor;
+		transform: scale(1.2);
 	}
 
 	// .slider__item
@@ -392,6 +410,7 @@
 	// .item-slider__images
 
 	&__images {
+		margin: 0 auto;
 		max-width: 320px;
 		min-height: 200px;
 		max-height: 200px;
@@ -401,7 +420,6 @@
 	// .item-slider__img
 
 	&__img {
-		margin: 0 auto;
 		height: 100%;
 		object-fit: cover;
 		width: 100%;
