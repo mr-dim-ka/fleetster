@@ -1184,6 +1184,131 @@ body {
   padding: 18px 38px;
 }
 
+.footer {
+  background-color: #303030;
+  color: #fff;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  padding: 57px 10px;
+}
+
+.footer__logo .logo__img {
+  margin: 0 auto;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.footer__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 235px;
+          flex: 0 1 235px;
+}
+
+.footer__info select {
+  display: block;
+  width: 100%;
+  min-height: 35px;
+  margin-bottom: 15px;
+  padding: 10px 13px;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.footer__info select:last-child {
+  margin-bottom: 0;
+}
+
+.footer__info option {
+  display: block;
+}
+
+.footer__info-title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 246.1538461538%;
+}
+
+.footer-top {
+  border-bottom: 0.5px solid #535353;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 440px;
+          flex: 0 1 440px;
+}
+
+.footer-nav__item-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-nav__list-item {
+  font-size: 13px;
+  line-height: 246.1538461538%;
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  padding: 25px 0;
+}
+
+.footer-bottom__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-bottom__copy {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social__item {
+  margin-right: 20px;
+}
+
+.footer-social__item:last-child {
+  margin-right: 0;
+}
+
+.footer-social__img {
+  max-width: none;
+}
+
 @media (max-width: 1230px) {
   .default-btn {
     padding-top: calc(5px + 10 * ((100vw - 320px) / 910));
