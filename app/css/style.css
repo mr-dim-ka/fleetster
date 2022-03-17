@@ -965,6 +965,93 @@ body {
   background-image: url("../images/icons/people.svg");
 }
 
+.review {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #efefef;
+}
+
+.review__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  -webkit-column-gap: calc(30px + 70 * ((100vw - 320px) / 1120));
+     -moz-column-gap: calc(30px + 70 * ((100vw - 320px) / 1120));
+          column-gap: calc(30px + 70 * ((100vw - 320px) / 1120));
+}
+
+.review__box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 440px;
+          flex: 0 1 440px;
+}
+
+.review__title {
+  font-size: calc(26px + 4 * ((100vw - 320px) / 1120));
+  line-height: 126.6666666667%;
+  margin-bottom: 8px;
+}
+
+.review__text {
+  margin-bottom: 15px;
+}
+
+.review__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.review__link {
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #00a5f4;
+}
+
+.review__partners-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+
+.review__partners-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: calc(10px + 17 * ((100vw - 320px) / 1120));
+     -moz-column-gap: calc(10px + 17 * ((100vw - 320px) / 1120));
+          column-gap: calc(10px + 17 * ((100vw - 320px) / 1120));
+}
+
+.review__images {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+}
+
 @media (max-width: 1230px) {
   .rental {
     padding-top: calc(40px + 105 * ((100vw - 320px) / 910));
@@ -984,6 +1071,14 @@ body {
 
   .slider {
     padding-bottom: calc(40px + 200 * ((100vw - 320px) / 910));
+  }
+
+  .review {
+    padding-top: calc(40px + 60 * ((100vw - 320px) / 910));
+  }
+
+  .review {
+    padding-bottom: calc(40px + 60 * ((100vw - 320px) / 910));
   }
 }
 
