@@ -60,7 +60,10 @@ body {
 	}
 }
 .default-btn {
-	padding: 15px 40px;
+	@include adaptiv-value("padding-top", 15, 5, 1);
+	@include adaptiv-value("padding-bottom", 15, 5, 1);
+	@include adaptiv-value("padding-left", 40, 5, 1);
+	@include adaptiv-value("padding-right", 40, 5, 1);
 	font-size: 12px;
 	line-height: calc(15 / 12 * 100%);
 	color: #fff;
