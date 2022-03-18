@@ -1,2 +1,131 @@
-// @media (max-width: px) {	
-// }
+@media (max-width: 768px) {
+	body {
+		&.lock {
+			overflow: hidden;
+		}
+	}
+	.header-top__menu {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: -250%;
+		background-color: rgba($blueColor, 0.8);
+		transition: all 0.5s ease 0s;
+		overflow: auto;
+		&.active {
+			top: 80px;
+		}
+	}
+	.header-top__logo {
+		order: 1;
+		margin: 0;
+		margin-right: 10px;
+	}
+	.header__burger {
+		order: 3;
+		display: block;
+		position: relative;
+		z-index: 2;
+		width: 30px;
+		height: 20px;
+		span {
+			position: absolute;
+			background-color: #fff;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			border-radius: 1px;
+		}
+		&::before,
+		&::after {
+			content: "";
+			background-color: #fff;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			border-radius: 1px;
+			transition: all 0.5s ease 0s;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		&.active {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(45deg);
+				top: 9px;
+			}
+			&::after {
+				transform: rotate(-45deg);
+				bottom: 9px;
+			}
+		}
+	}
+	.header-top__btn {
+		order: 2;
+		margin-left: auto;
+		margin-right: 40px;
+		@include adaptiv-value("margin-right", 40, 10, 0);
+	}
+	.menu {
+		&__list {
+			display: block;
+			text-align: center;
+		}
+		&__list-item {
+			& + .menu__list-item {
+				margin: 0;
+			}
+		}
+		&__list-link {
+			padding: 20px 0;
+		}
+	}
+	.menu--register {
+		margin: 0;
+		&.active {
+			top: 245px;
+		}
+	}
+	.header-content__form {
+		display: block;
+	}
+	.header-content__input {
+		margin-bottom: 20px;
+		width: 80%;
+	}
+	.header-content__button {
+		padding: 15px 30px;
+		display: block;
+		width: 30%;
+	}
+}
+//========================================================================================
+@media (max-width: 640px) {
+	.header-content__input {
+		width: 100%;
+	}
+	.header-content__button {
+		width: 50%;
+	}
+}
+//========================================================================================
+@media (max-width: 375px) {
+	.header-content__button {
+		width: 100%;
+	}
+	.header-content__tab-btn {
+		display: block;
+		& + .header-content__tab-btn {
+			margin-left: 0;
+		}
+	}
+}
