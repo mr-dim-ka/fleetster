@@ -137,6 +137,15 @@
 			background-color: #e8e8e8;
 		}
 	}
+	.footer__inner {
+		display: block;
+	}
+	.footer__info {
+		margin-bottom: 30px;
+	}
+	.footer__info select {
+		width: 50%;
+	}
 }
 //========================================================================================
 @media (max-width: 640px) {
@@ -226,6 +235,26 @@
 	.places__inner {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.footer-nav {
+		display: block;
+	}
+	.footer-nav__item {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.footer-bottom__inner {
+		display: block;
+	}
+	.footer-social__list {
+		justify-content: center;
+	}
+	.footer-bottom__copy {
+		margin-top: 10px;
+		text-align: center;
+	}
 }
 //========================================================================================
 @media (max-width: 375px) {
@@ -252,5 +281,8 @@
 	.connection-item__form-btn {
 		width: 100%;
 		padding: 10px;
+	}
+	.footer__info select {
+		width: 100%;
 	}
 }
