@@ -121,6 +121,22 @@
 		border-top: 4px solid $orangeColor;
 		transform: scale(1);
 	}
+	.connection__inner {
+		display: block;
+	}
+	.connection-item {
+		min-height: auto;
+		padding-top: 0;
+		padding: 20px 0;
+		&::after {
+			top: auto;
+			right: 0px;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #e8e8e8;
+		}
+	}
 }
 //========================================================================================
 @media (max-width: 640px) {
@@ -162,10 +178,10 @@
 		width: 70%;
 		padding: 10px;
 	}
-	.review__inner{
+	.review__inner {
 		display: block;
 	}
-	.review__box{
+	.review__box {
 		margin-bottom: 20px;
 	}
 	.review__btn {
@@ -173,7 +189,7 @@
 		width: 100%;
 		padding: 10px;
 	}
-	.review__img{
+	.review__img {
 		width: 100%;
 	}
 }
@@ -225,5 +241,16 @@
 	.rental__link {
 		display: block;
 		padding: 15px 0;
+	}
+	.connection-item__form {
+		display: block;
+	}
+	.connection-item__form-input {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.connection-item__form-btn {
+		width: 100%;
+		padding: 10px;
 	}
 }
