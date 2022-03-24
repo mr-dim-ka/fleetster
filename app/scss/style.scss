@@ -367,7 +367,7 @@
 .slider {
 	position: relative;
 	@include adaptiv-value("padding-top", 240, 40, 1);
-	@include adaptiv-value("padding-bottom", 240, 40, 1);
+	@include adaptiv-value("padding-bottom", 240, 20, 1);
 
 	// .slider__title
 
@@ -592,7 +592,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 60px;
+		@include adaptiv-value("margin-bottom", 60, 40, 1);
 	}
 
 	// .review__btn
@@ -603,7 +603,7 @@
 	// .review__link
 
 	&__link {
-		margin: 0 10px;
+		margin: 0 5px;
 		font-weight: 700;
 		font-size: 12px;
 		line-height: 15px;
