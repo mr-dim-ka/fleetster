@@ -379,15 +379,12 @@
 
 	&__items {
 	}
-	.slick-track {
-		display: flex;
-		align-items: center;
-		column-gap: 50px;
-	}
+	.slick-track,
 	.slick-list {
 		display: flex;
 		align-items: center;
-		height: 600px;
+		@include adaptiv-value("column-gap", 50, 0, 1);
+		min-height: 570px;
 	}
 	.slick-slide {
 		max-width: 80%;

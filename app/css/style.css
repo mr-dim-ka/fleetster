@@ -804,7 +804,8 @@ body {
   margin-bottom: 55px;
 }
 
-.slider .slick-track {
+.slider .slick-track,
+.slider .slick-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,16 +815,7 @@ body {
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
           column-gap: 50px;
-}
-
-.slider .slick-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 600px;
+  min-height: 570px;
 }
 
 .slider .slick-slide {
@@ -1366,6 +1358,13 @@ body {
     padding-bottom: calc(40px + 200 * ((100vw - 320px) / 910));
   }
 
+  .slider .slick-track,
+  .slider .slick-list {
+    -webkit-column-gap: calc(0px + 50 * ((100vw - 320px) / 910));
+       -moz-column-gap: calc(0px + 50 * ((100vw - 320px) / 910));
+            column-gap: calc(0px + 50 * ((100vw - 320px) / 910));
+  }
+
   .review {
     padding-top: calc(40px + 60 * ((100vw - 320px) / 910));
   }
@@ -1380,6 +1379,16 @@ body {
 
   .connection {
     padding-bottom: calc(40px + 25 * ((100vw - 320px) / 910));
+  }
+}
+
+@media (max-width: 1200px) {
+  .item-slider__nav {
+    display: block;
+  }
+
+  .item-slider__num {
+    margin-top: 15px;
   }
 }
 
@@ -1524,6 +1533,15 @@ body {
     display: block;
     width: 30%;
   }
+
+  .slider .slick-current.slick-active {
+    -webkit-box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #f5a623;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media (max-width: 640px) {
@@ -1553,6 +1571,23 @@ body {
     grid-column: span 1;
     grid-row: span 1;
   }
+
+  .slider .slick-arrow {
+    top: -30px;
+  }
+
+  .slider .slick-prev {
+    left: 0;
+  }
+
+  .slider .slick-next {
+    left: 100px;
+  }
+
+  .item-slider__btn {
+    width: 70%;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1580,6 +1615,10 @@ body {
   .places__item:nth-child(6) {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .item-slider__btn {
+    width: 100%;
   }
 }
 
